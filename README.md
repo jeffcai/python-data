@@ -6,10 +6,9 @@ To code something with Python for analysing data, and code machine learning algo
 
 To initialize environment, run the commands below:
 
-'''
-python -m venv .env
-source .env/bin/activate
-'''
+> python -m venv .env
+> 
+> source .env/bin/activate
 
 To install dependencies, run "pip install -r requirements.txt" script at the root of the project.
 
