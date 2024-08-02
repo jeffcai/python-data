@@ -1,7 +1,7 @@
 from fredapi import Fred
 
 # Get a free API key from the FRED website
-fred = Fred(api_key='78d1b6f30e4ee25c87b5de7cd36a0694')
+fred = Fred(api_key='xxx')
 
 # Search for the required data using keywords
 fred.search("Exchange monthly China")
