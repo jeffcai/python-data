@@ -24,7 +24,15 @@ Can search to find series id, such as Chinese Yuan Renminbi to U.S. Dollar Spot 
 
 Edit the xchange_rate_analysis.py to replace API key and series id with yours.
 
+No complete yet - TODO
 
+### more code relevant to Machine Learning/Data Science
+
+TODO
+
+### more code relevant to Modern Applied Statistics
+
+TODO
 
 ## Tips
 
@@ -35,3 +43,5 @@ The pyrightconfig file is used to enable Python virtual environment (so that cod
 - [用 Python 语言开发 Shiny 应用](https://xiangyun.rbind.io/2024/04/shiny-for-python/)
 - [Time-Series Analysis and Forecasting of Foreign Exchange Rate with ARIMA Model](https://medium.com/womenintechnology/foreign-exchange-rate-time-series-analysis-and-forecasting-with-arima-model-c22f7972fd36)
 - [Time-Series Analysis and Forecasting of Foreign Exchange Rate with SARIMAX Model](https://medium.com/womenintechnology/time-series-analysis-and-forecasting-of-foreign-exchange-rate-with-sarimax-model-efbc39babd33)
+- [动手实战人工智能 AI By Doing](https://aibydoing.com/)
+- [现代应用统计](https://bookdown.org/xiangyun/masr/)
