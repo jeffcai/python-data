@@ -10,7 +10,8 @@ To initialize environment, run the commands below:
 >
 > source .env/bin/activate
 
-To install dependencies, run "pip install -r requirements.txt" script at the root of the project, to speed up in China, use mirror like to append the script "-i https://pypi.tuna.tsinghua.edu.cn/simple/"
+To install dependencies, run "pip install -r requirements.txt" script at the root of the project, to speed up in China, use mirror like to append the script "-i https://pypi.tuna.tsinghua.edu.cn/simple/";
+
 
 ### shiny application
 
@@ -38,9 +39,16 @@ TODO
 
 TODO
 
-docker compose to start containers for MinIO/Dremio/Nessie by referring to the code repo: https://github.com/miniohq/datalake_ref_arch (note that the code repo is to create data source in Dremio with Nessie for catalog), and then run execute: brew install apache-spark (once done, to run spark-shell)
+docker compose to start containers for MinIO/Dremio/Nessie by referring to the code repo: https://github.com/miniohq/datalake_ref_arch (note that the code repo is to create data source in Dremio with Nessie for catalog)
 
-Run "python3 pyspark-iceberg-test.py", at first it will download dependencies (maven) from maven repo
+Run execute: brew install apache-spark (once done, to run spark-shell), this is optional, we can use embedded cluster otherwise need pyspark-iceberg-test.py to set remote address for spark cluster
+
+Run "python3 pyspark-iceberg-test.py", at first it will download dependencies (maven) from maven repo, note that it's to download maven jars during executing the python script, which may a bit slow like in China
+
+After execution, you can access:
+- MinIO: http://localhost:9051/login, with account minioadmin/minioadmin;
+- Dremio: http://localhost:9053/login, with account admin/bad4admins;
+- Nessie: http://localhost:19120/tree/main.
 
 ## Tips
 
