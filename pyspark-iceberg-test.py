@@ -39,20 +39,4 @@ spark.sql("DROP TABLE IF EXISTS nessie.subjects")
 spark.sql("CREATE TABLE nessie.subjects (subject STRING) USING iceberg").show()
 spark.sql("INSERT INTO nessie.subjects VALUES ('Math'), ('Social Studies'), ('Geography')").show()
 spark.sql("SELECT * FROM nessie.subjects").show()
-print("SQL execution done")
-
-# spark.sql("CREATE BRANCH work IN arctic").toPandas()
-# spark.sql("USE REFERENCE work IN arctic")
-
-# spark.sql(
-#     """CREATE TABLE IF NOT EXISTS arctic.salesdip.sales
-#             (id STRING, name STRING, product STRING, price STRING, date STRING) USING iceberg"""
-# )
-
-# spark.sql(
-#     """CREATE OR REPLACE TEMPORARY VIEW salesview USING csv
-#             OPTIONS (path "salesdata.csv", header true)"""
-# )
-# spark.sql("INSERT INTO arctic.salesdip.sales SELECT * FROM salesview")
-
-# spark.sql("SELECT * FROM arctic.salesdip.sales LIMIT 5").toPandas()
+print("Spark SQL execution done")

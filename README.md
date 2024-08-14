@@ -41,7 +41,15 @@ TODO
 
 docker compose to start containers for MinIO/Dremio/Nessie by referring to the code repo: https://github.com/miniohq/datalake_ref_arch (note that the code repo is to create data source in Dremio with Nessie for catalog)
 
-Run execute: brew install apache-spark (once done, to run spark-shell), this is optional, we can use embedded cluster otherwise need pyspark-iceberg-test.py to set remote address for spark cluster
+Run execute: brew install apache-spark; once done, to run spark-shell for quick running script in terminal but which is optional
+
+``` unclear about it yet, what causes error below when running python script (the line of dropping table, but comment it and run it again the table can be created, but another failure when insert data)
+24/08/14 21:30:46 WARN FileSystem: Failed to initialize fileystem hdfs://master:8020/user/hive/warehouse: java.lang.IllegalArgumentException: java.net.UnknownHostException: master
+24/08/14 21:30:46 WARN SharedState: Cannot qualify the warehouse path, leaving it unqualified.
+java.lang.IllegalArgumentException: java.net.UnknownHostException: master
+```
+
+
 
 Run "python3 pyspark-iceberg-test.py", at first it will download dependencies (maven) from maven repo, note that it's to download maven jars during executing the python script, which may a bit slow like in China
 
