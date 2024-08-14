@@ -45,7 +45,7 @@ Run execute: brew install apache-spark (once done, to run spark-shell), this is 
 
 Run "python3 pyspark-iceberg-test.py", at first it will download dependencies (maven) from maven repo, note that it's to download maven jars during executing the python script, which may a bit slow like in China
 
-After execution, you can access:
+After execution, you can access to view what table created and data inserted via Spark SQL implemented in the python script mentioned above:
 - MinIO: http://localhost:9051/login, with account minioadmin/minioadmin;
 - Dremio: http://localhost:9053/login, with account admin/bad4admins;
 - Nessie: http://localhost:19120/tree/main.
