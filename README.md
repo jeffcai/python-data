@@ -10,7 +10,7 @@ To initialize environment, run the commands below:
 >
 > source .env/bin/activate
 
-To install dependencies, run "pip install -r requirements.txt" script at the root of the project.
+To install dependencies, run "pip install -r requirements.txt" script at the root of the project, to speed up in China, use mirror like to append the script "-i https://pypi.tuna.tsinghua.edu.cn/simple/"
 
 ### shiny application
 
@@ -34,6 +34,14 @@ TODO
 
 TODO
 
+### more code relevant to Data Lake or Lake House
+
+TODO
+
+docker compose to start containers for MinIO/Dremio/Nessie by referring to the code repo: https://github.com/miniohq/datalake_ref_arch (note that the code repo is to create data source in Dremio with Nessie for catalog), and then run execute: brew install apache-spark (once done, to run spark-shell)
+
+Run "python3 pyspark-iceberg-test.py", at first it will download dependencies (maven) from maven repo
+
 ## Tips
 
 The pyrightconfig file is used to enable Python virtual environment (so that code navigation works).
@@ -45,3 +53,4 @@ The pyrightconfig file is used to enable Python virtual environment (so that cod
 - [Time-Series Analysis and Forecasting of Foreign Exchange Rate with SARIMAX Model](https://medium.com/womenintechnology/time-series-analysis-and-forecasting-of-foreign-exchange-rate-with-sarimax-model-efbc39babd33)
 - [动手实战人工智能 AI By Doing](https://aibydoing.com/)
 - [现代应用统计](https://bookdown.org/xiangyun/masr/)
+- [Modern Datalake Reference Tech Stack, docker compose for MinIO/Dremio/Nessie ...](https://github.com/miniohq/datalake_ref_arch)
