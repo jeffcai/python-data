@@ -71,3 +71,4 @@ The pyrightconfig file is used to enable Python virtual environment (so that cod
 - [现代应用统计](https://bookdown.org/xiangyun/masr/)
 - [Modern Datalake Reference Tech Stack, docker compose for MinIO/Dremio/Nessie ...](https://github.com/miniohq/datalake_ref_arch)
 - [Manage Iceberg Tables with Spark](https://blog.min.io/manage-iceberg-tables-with-spark/)
+- [A Developer’s Introduction to Apache Iceberg using MinIO](https://blog.min.io/a-developers-introduction-to-apache-iceberg-using-minio/)
